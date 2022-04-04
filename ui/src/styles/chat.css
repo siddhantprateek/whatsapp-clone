@@ -33,6 +33,8 @@
     border: none;
     padding: 10px;
     font-size: 1rem;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
 }
 
 .chat-msg {
@@ -60,4 +62,12 @@
 .chat-recieved {
     margin-left: auto;
     background-color: #77ecace1;
+}
+
+.chat-user-header {
+    padding: 0 10px;
+}
+
+.attach {
+    transform: rotate(40deg);
 }

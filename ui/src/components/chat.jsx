@@ -4,16 +4,16 @@ import InsertEmoticonOutlinedIcon from "@mui/icons-material/InsertEmoticonOutlin
 import AttachFileOutlinedIcon from "@mui/icons-material/AttachFileOutlined";
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-
 import MicOutlinedIcon from "@mui/icons-material/MicOutlined";
 import { Avatar, IconButton } from "@mui/material";
 function Chat() {
+
   return (
     <div className="chat">
       <div className="chat-header">
         <div className="chat-header-left">
           <Avatar />
-          <div className="">
+          <div className="chat-user-header">
             <h3>Avatar Name</h3>
             <p>last seen at</p>
           </div>
@@ -32,7 +32,7 @@ function Chat() {
           <span className="chat-user-name">Siddhant</span>
           This is your Message
           <span className="chat-timestamp">
-            {new Date().toUTCString()}
+          {new Date().getUTCHours() + ":" + new Date().getMinutes()}
           </span>
         </p>
 
@@ -40,7 +40,7 @@ function Chat() {
           <span className="chat-user-name">Martinez</span>
           This is your Message
           <span className="chat-timestamp">
-            {new Date().toUTCString()}
+            {new Date().getUTCHours() + ":" + new Date().getMinutes()}
           </span>
         </p>
       </div>
@@ -50,12 +50,13 @@ function Chat() {
           <InsertEmoticonOutlinedIcon />
         </IconButton>
         <IconButton>
-          <AttachFileOutlinedIcon />
+          <AttachFileOutlinedIcon className="attach" />
         </IconButton>
-        <input type="text" placeholder="Type a message" />
+        <input type="text" className="chat-msg-input" placeholder="Type a message" />
         <IconButton>
           <MicOutlinedIcon />
         </IconButton>
+
       </div>
     </div>
   );

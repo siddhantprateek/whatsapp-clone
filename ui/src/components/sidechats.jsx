@@ -5,7 +5,7 @@ function Sidechats() {
   return (
     <div className='side-chats'>
         <Avatar src=''/>
-        <div className="">
+        <div className="user-logs">
             <h3>Users Name</h3>
             <p>Last message</p>
         </div>
