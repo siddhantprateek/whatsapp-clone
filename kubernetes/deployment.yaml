@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: whatsapp-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whatsapp-ui
+  template:
+    metadata:
+      labels:
+        app: whatsapp-ui
+    spec:
+      containers:
+      - name: whatsapp-ui
+        image: whatsapp-ui/whatsapp-ui:1.0.0
+        ports:
+        - containerPort: 3000 
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
