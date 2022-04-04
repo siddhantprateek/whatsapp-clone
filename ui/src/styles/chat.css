@@ -1,0 +1,63 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 0.70;
+}
+.chat-header-left {
+    display: flex;
+}
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.chat-body {
+    /* covers enter height */
+    /*  flex item will grow or shrink to fit the space available in its flex container. */
+    flex: 1;
+    background-image: url("https://cdn.wallpapersafari.com/54/0/HluF7g.jpg");
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-left: 1px solid rgb(168, 168, 168);
+}
+
+.input-area input {
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.chat-msg {
+    position: relative;
+    background-color: bisque;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.chat-timestamp {
+    margin-left: 10px;
+    font-size: x-small
+}
+
+.chat-user-name {
+    font-weight: 800;
+    position: absolute;
+    top: -18px;
+    font-size: x-small;
+}
+
+.chat-recieved {
+    margin-left: auto;
+    background-color: #77ecace1;
+}
