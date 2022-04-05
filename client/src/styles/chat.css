@@ -71,3 +71,8 @@
 .attach {
     transform: rotate(40deg);
 }
+
+
+.send-btn {
+    transform: rotate(-45deg);
+}
